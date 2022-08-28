@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+}
+
+// Base styles for body
+
+body {
+  background-color: $white-color;
+
+  color: $primary-text-color;
+
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Global styles for container
+
+// Mobile container
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  // Tablet container
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+
+  // Desktop container
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  outline: none;
+  border-color: transparent;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
